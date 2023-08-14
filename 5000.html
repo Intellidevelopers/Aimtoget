@@ -359,7 +359,7 @@
             // Simulate the search process with a setTimeout
             setTimeout(() => {
               // Replace this with your actual search logic
-             const results = ['Your payment has been successfully approved.'];
+             const results = ['Sorry Dear User no any payment Was found from Your Bank.'];
               resolve(results);
             }, 10000); // Simulating a 2-second search process
           });
@@ -370,8 +370,8 @@
           const searchResult = result.value;
           // You can display or process the search results here
           Swal.fire({
-            icon: 'success',
-            title: 'Congratulations',
+            icon: 'error',
+            title: 'Result',
             html: `${searchResult.map((item) => `${item}`).join('')}`,
           });
         }
